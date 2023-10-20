@@ -1,0 +1,754 @@
+/* noto-sans-kr-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/noto-sans-kr-v36-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 200;
+  src: url("fonts/noto-sans-kr-v36-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/noto-sans-kr-v36-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/noto-sans-kr-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/noto-sans-kr-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/noto-sans-kr-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/noto-sans-kr-v36-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/noto-sans-kr-v36-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-kr-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/noto-sans-kr-v36-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gasoek-one-regular - korean_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gasoek One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/gasoek-one-v3-korean_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* black-han-sans-regular - korean_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Black Han Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/black-han-sans-v17-korean_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html, body {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  font-size: 15px;
+  scroll-behavior: smooth;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.is-unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+upported by Chrome, Edge, Opera and Firefox */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #797979;
+  margin: 1.425rem 0;
+}
+
+button,
+input[type=submit],
+input:not([type=checkbox], [type=radio]) {
+  font-family: "Roboto", sans-serif;
+  border: unset;
+  height: 39px;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  max-width: 240px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  transition: filter 0.3s ease-in-out;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+}
+
+.carousel-caption {
+  z-index: 10000 !important;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+header {
+  background: #2f2e2e !important;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header nav {
+  padding: 0;
+  height: 100% !important;
+}
+header nav .container-fluid {
+  height: calc(100% + 15px);
+}
+header nav .container-fluid .logo-wrapper {
+  width: 140px;
+}
+header nav .container-fluid .navbar-nav {
+  gap: 10px;
+  height: 100%;
+}
+header nav .container-fluid .navbar-nav li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .container-fluid .navbar-nav li a {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+header nav .container-fluid .navbar-nav li:hover a {
+  color: #ede5c7;
+}
+header nav .container-fluid .navbar-nav li:hover .dropdown-menu {
+  position: absolute;
+  display: block;
+  background: #3a3939;
+  border-radius: 0;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+header nav .container-fluid .navbar-nav li:hover .dropdown-menu li {
+  border-bottom: 1px solid rgba(138, 138, 138, 0.0588235294);
+}
+header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a {
+  padding: 5px;
+  color: #fff;
+}
+header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
+  background-color: unset !important;
+  color: #ede5c7;
+}
+
+.headings {
+  width: 60%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.headings img {
+  width: 179px;
+  margin-left: 46px;
+}
+.headings h5 {
+  font-weight: 300;
+  font-family: "Gasoek One";
+  text-align: center;
+  font-size: 5em;
+  color: #3f3f3f;
+}
+
+.thumb-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 4px solid rgba(229, 229, 229, 0.66);
+  padding: 10px;
+}
+.thumb-item .left .title {
+  font-weight: bolder;
+}
+.thumb-item img {
+  width: 90px;
+}
+
+.my-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.my-card .my-card-body {
+  position: relative;
+}
+.my-card .my-card-body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(205, 205, 205, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+.my-card .my-card-footer {
+  text-align: center;
+  padding: 10px;
+  font-weight: 700 !important;
+  background-color: rgba(229, 229, 229, 0.6509803922);
+  position: relative;
+  z-index: 4;
+}
+.my-card .my-card-footer .title {
+  font-weight: 800;
+  font-size: 20px;
+  color: #000;
+}
+.my-card:hover .my-card-body::before {
+  background-color: rgba(205, 205, 205, 0.8784313725);
+}
+
+.search-video-wrapper {
+  margin-top: 10px;
+}
+.search-video-wrapper .input-group {
+  border: none;
+  position: relative;
+}
+.search-video-wrapper .input-group .input-group-text {
+  border: none;
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  background: none;
+}
+.search-video-wrapper .input-group input {
+  padding-left: 43px;
+}
+.search-video-wrapper .input-group input:focus {
+  background: #e0e0e0;
+}
+.search-video-wrapper .video-suggestions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.search-video-wrapper .video-suggestions .video-thum {
+  width: 33.3333333333%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+}
+.search-video-wrapper .video-suggestions .video-thum::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6901960784);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.search-video-wrapper .video-suggestions .video-thum > * {
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+.search-video-wrapper .video-suggestions .video-thum .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 6em;
+  transform: translate(-50%, -50%);
+  font-weight: unset;
+}
+.search-video-wrapper .video-suggestions .video-thum .length {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.search-video-wrapper .video-suggestions .suggestion-items {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 12;
+  display: none;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.search-video-wrapper .video-suggestions .suggestion-items span {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.4117647059);
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  min-width: 100px;
+}
+.search-video-wrapper .video-suggestions .suggestion-items span:hover {
+  color: #5c5c5c;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-control:focus {
+  box-shadow: unset;
+  border-color: #1a1a1a;
+}
+
+.input-group {
+  border: 1px solid rgba(0, 0, 0, 0.3882352941);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-search-text {
+  border: unset;
+  border-bottom: 2px solid #ebe5d6;
+}
+.main-search-text .input-group-text {
+  background-color: #ebe5d6;
+  color: #000;
+}
+
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.my-row.col-2 > * {
+  width: 50%;
+}
+
+.sub-title {
+  font-family: "Black Han Sans";
+  text-align: center;
+  font-weight: 500;
+  font-size: 2em;
+  color: #8c8b8b;
+  margin-bottom: 20px;
+}
+
+.sub-title-2 {
+  font-family: "Black Han Sans";
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #8c8b8b;
+  margin-bottom: 20px;
+}
+
+.sub-title-no-size {
+  font-family: "Black Han Sans";
+  text-align: center;
+  font-weight: 200;
+  color: #8c8b8b;
+  margin-bottom: 20px;
+}
+
+#carousel .cloud9-item, #buttons button {
+  cursor: pointer;
+}
+
+.carousel {
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure a {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+  display: block;
+}
+.carousel figure a:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel figure a img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+  transition: 0.5s ease-in-out;
+  filter: grayscale(0.7);
+}
+.carousel figure a img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel figure a:hover img {
+  filter: grayscale(0);
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.btn.btn-black {
+  background-color: #000;
+}
+.btn.btn-dark-yellow {
+  background: #A3996F;
+  color: #fff;
+}
+.btn.btn-dark-green {
+  background: #3F7652;
+  color: #fff;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.yellow-dark {
+  color: #a1660c !important;
+}
+
+.yellow-dark-2 {
+  color: #b7811b !important;
+}
+
+.yellow {
+  color: #dacc94 !important;
+}
+
+.violet {
+  color: #C34FDC !important;
+}
+
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.my-row.my-col-3 > * {
+  width: calc(33.3333333333% - 10px);
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.btn.btn-primary-gradient {
+  background: linear-gradient(90deg, rgb(95, 91, 205) 0%, rgb(237, 88, 24) 100%);
+  color: #fff;
+}
+.btn.rounded {
+  border-radius: 100px !important;
+}
+.btn.btn-violet {
+  background-color: #C34FDC;
+  color: #fff;
+}
+
+.bg-violet {
+  background-color: #C34FDC;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.main-heading-text {
+  font-size: 5em;
+  font-family: "Gasoek One";
+}
+
+.main-heading-text-2 {
+  font-size: 4em;
+  font-family: "Gasoek One";
+}
+
+p {
+  margin-bottom: 1.4em;
+}
+
+.gap-sm {
+  gap: 10px;
+}
+
+.profile-icon {
+  font-size: 2.3em !important;
+}
+
+.maroon {
+  color: #902052;
+}
+
+.df-ac {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 60px;
+}
+main section {
+  font-size: 1.1em;
+  padding: 30px 0;
+}
+main section.hero-section .hero-title {
+  color: #dacc94;
+  font-weight: 300;
+  font-family: "Gasoek One";
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 20px;
+  color: #3f3f3f;
+}
+main section.content-section .why-choose {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+main section.content-section .why-choose .choose-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: 60%;
+}
+main section.content-section .why-choose .choose-item .left-side {
+  background-image: url(../img/main-card-bullet.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 170px;
+  height: 170px;
+  text-shadow: #c8c8c8 1px 1px 0px, #b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgba(140, 140, 140, 0.498039) 0px 4px 0px, #787878 0px 0px 0px, rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+  font-size: 4em;
+  font-weight: 400;
+  font-family: "Black Han Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3f3f3f;
+}
+main section.content-section .why-choose .choose-item .right-side {
+  width: 74%;
+}
+main section.content-section .why-choose .choose-item .right-side h4 {
+  font-weight: 900;
+  color: #3f3f3f;
+  margin-bottom: 15px;
+}
+main section.content-section .keep-in-mind {
+  text-align: center;
+}
+main section.content-section .keep-in-mind p:first-child {
+  font-weight: 700;
+}
+main section.content-section .google-ss {
+  width: 600px;
+  margin: 0 auto;
+}
+main section.section-latest .slot-recommend .reco-img {
+  width: 400px;
+}
+main section.contact-section .slot-logo {
+  width: 150px;
+}
+main section.guarantee-section {
+  font-size: 1.2em !important;
+}
+main section.guarantee-section .heading-hor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-bottom: 3px solid #4e4e4e;
+}
+main section.guarantee-section .heading-hor a {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+footer {
+  background: #e4e4e4;
+  height: 300px;
+  padding: 20px;
+}
+footer .links {
+  display: flex;
+  justify-content: space-around;
+}
+footer .links ul li:first-child {
+  font-weight: 900;
+}
+footer .links ul li a {
+  text-decoration: underline;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+footer .icons a img {
+  width: 32px;
+}/*# sourceMappingURL=style.css.map */
