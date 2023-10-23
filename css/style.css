@@ -594,6 +594,13 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   background-color: #C34FDC;
   color: #fff;
 }
+.btn.btn-dark-yellow {
+  background: #a3996f;
+}
+.btn.btn-dark-blue {
+  background: #074151;
+  color: #fff;
+}
 
 .bg-violet {
   background-color: #C34FDC;
@@ -641,6 +648,10 @@ p {
 
 .underlined {
   text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
 }
 
 main {

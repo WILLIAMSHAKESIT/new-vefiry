@@ -205,6 +205,13 @@ $viewer-distance: 500px;
         background-color: #C34FDC;
         color: #fff;
     }
+    &.btn-dark-yellow{
+        background: #a3996f;
+    }
+    &.btn-dark-blue{
+        background: #074151;
+        color: #fff;
+    }
 }
 .bg-violet{
     background-color: #C34FDC;
@@ -249,3 +256,6 @@ p{
     text-decoration: underline;
 }
 
+.italic{
+    font-style: italic;
+}
