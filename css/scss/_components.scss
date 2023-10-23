@@ -367,3 +367,12 @@ header{
         }
     }
 }
+
+.card{
+  &.img-overlayed{
+    border: unset;
+    img{
+        height: 388px;
+    }
+  }
+}

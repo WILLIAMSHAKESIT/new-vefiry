@@ -155,6 +155,31 @@ main{
         &.casino-games-section{
             
         }
+        &.online-slot-section{
+            .choices{
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+                .choice{
+                    width: calc(100% / 4 - 10px);
+                    text-align: center;
+                    .btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    img{
+                        transform: scale(1);
+                        transition: 0.5s ease-in-out;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

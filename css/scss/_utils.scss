@@ -142,6 +142,7 @@ $viewer-distance: 500px;
 	
 }
 .btn{
+    text-align: center;
     &.btn-black{
         background-color: #000;
     }
@@ -157,6 +158,15 @@ $viewer-distance: 500px;
         background: linear-gradient(69deg, #1a53bd, #ff491b);
         color: #fff;
         border: unset;
+    }
+    &.btn-yellow{
+        background: #dacc94;
+        color: #fff;
+        &:hover{
+            background:unset;
+            color: #000;
+            border-color: #000;
+        }
     }
 }
 .w-fit{
@@ -291,7 +301,7 @@ p{
 
 .yellow-hover{
     &:hover{
-        color:#A3996F;
+        color:#A3996F !important;
     }
 }
 a{
@@ -303,4 +313,24 @@ a{
 }
 .bordered{
     border: 1px solid #00000029;
+}
+.bg-gray{
+    background: #e4e4e4;
+}
+
+.card-img-overlay{
+    &.left-b{
+        right: unset;
+        top: unset;
+        left: 10px !important;
+        bottom: 10px !important;
+    }
+}
+
+.font-md{
+    font-size: 1.5em;
+}
+
+.vid-container{
+    max-width: 70%;
 }
