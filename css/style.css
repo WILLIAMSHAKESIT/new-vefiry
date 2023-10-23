@@ -514,6 +514,25 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   right: 10px;
 }
 
+.custom-pagination {
+  margin: 0 auto !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.custom-pagination * {
+  border: none !important;
+  color: #000;
+  font-weight: 300;
+}
+.custom-pagination .pagination .page-item.active {
+  font-weight: 900;
+}
+.custom-pagination .pagination .page-item.active a {
+  background: unset;
+  color: #000;
+  font-weight: 600;
+}
+
 .btn {
   display: flex;
   align-items: center;
