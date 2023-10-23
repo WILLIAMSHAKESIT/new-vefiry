@@ -92,6 +92,69 @@ main{
                 }
             }
         }
+        &.event-section{
+            .event-cont-header{
+
+            }
+            .container{
+                >{
+                    .bordered{
+                        width: 100%;
+                        .event-hash{
+                            display: block;
+                            white-space: nowrap;
+                            width: 100%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .social-links{
+                    padding: 20px 0;
+                    border-top: 1px solid #0000002e;
+                    border-bottom: 1px solid #0000002e;
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .socials{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        font-size: 1.2em;
+                        a{
+                            color: #3f3f3f;
+                            &:hover{
+                                &:not(:last-child){
+                                    color: #2ab5ff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.hero-sub-section{
+            video{
+                width: 100%;
+            }
+            &.max-height{
+                max-height: 351px;
+                overflow: hidden;
+            }
+            h1{
+                position: absolute;
+                top: 45px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 5em;
+                color: #fff !important;
+                font-weight: 700 !important;
+            }
+        }
+        &.casino-games-section{
+            
+        }
     }
 }
 

@@ -17,4 +17,31 @@ $(document).ready(function(){
         let vidSrc = $(this).data('vid')
         $('.video-container iframe').attr('src',vidSrc)
     })
+    $(window).click(function(){
+        $('.more-vert ul').hide()
+    })
+    $('.more-vert .trigger').click(function(e){
+        e.stopPropagation()
+        $(this).siblings('ul').toggle()
+    })
+    $('.modal-trigger').click(function(){
+        let el = $(this).data('targ')
+        $(`#${el}`).toggle()
+    })
+    $('.close-modal').click(function(){
+        $('.custom-modal').hide()
+    })
+    $('.toggle-full').click(function(){
+        let iconState = ''
+        if (!document.fullscreenElement) {
+            iconState = 'close_fullscreen'
+            document.documentElement.requestFullscreen();
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+              iconState = 'open_in_full'
+            }
+        }
+        $(this).find('.material-symbols-outlined').text(`${iconState}`)
+    })
 })

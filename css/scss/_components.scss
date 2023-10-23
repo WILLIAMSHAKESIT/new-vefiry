@@ -17,7 +17,7 @@ header{
                 width: 140px;
             }
             .navbar-nav{
-                gap: 10px;
+                gap: 14px;
                 height: 100%;
                 li{
                     position: relative;
@@ -142,6 +142,34 @@ header{
     }
 }
 
+.card{
+    &.rounded{
+        border-radius: 15px !important;
+        overflow: hidden;
+        .img-container{
+            position: relative;
+            &::before{
+                transition: .5s ease-in;
+                background-color: #e6e6e600;
+            }
+        }
+        &:hover{
+            .img-container{
+                position: relative;
+                &::before{
+                    content:"";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #e6e6e6ce;
+                    transition: .5s ease-in;
+                }
+            }
+        }
+    }
+}
 
 .search-video-wrapper{
     margin-top: 10px;
@@ -234,3 +262,86 @@ header{
     }
 }
 
+
+.user{
+    img{
+        width: 40px;
+    }
+}
+
+
+.more-vert{
+    position: relative;
+    .trigger{
+        cursor: pointer;
+        user-select: none;
+    }
+    ul{
+        position: absolute;
+        background-color: #ffffff;
+        height: fit-content;
+        min-width: 200px;
+        right: 20px;
+        border: 1px solid #eeeeee;
+        box-shadow: 0 0 7px #00000024;
+        border-radius: 2px;
+        display: none;
+        li{
+            width: 100%;
+            padding: 10px;
+            a{
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.post-img{
+    position: relative;
+    .expand{
+        position: absolute;
+        padding: 5px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        right: 10px;
+        top: 10px;
+        display: none;
+    }
+    &:hover{
+        .expand{
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+.custom-modal{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    display: none;
+    .modal-control{
+        position: absolute;
+        top: 10px;
+        span{
+            font-size: 2.5em;
+        }
+        &.toggle-full{
+            left: 10px;
+        }
+        &.close-modal{
+            right: 10px;
+        }
+    }
+}
