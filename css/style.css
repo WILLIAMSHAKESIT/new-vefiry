@@ -731,6 +731,9 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 .my-row.my-col-3 > * {
   width: calc(33.3333333333% - 10px);
 }
+.my-row.my-col-2 > * {
+  width: calc(50% - 10px);
+}
 
 .mt-6 {
   margin-top: 6rem;
@@ -865,6 +868,10 @@ a.lined-hover:hover {
 video {
   -webkit-clip-path: inset(1px 1px);
           clip-path: inset(1px 1px);
+}
+
+.bg-yellow {
+  background: #ede5c7;
 }
 
 main {
@@ -1018,6 +1025,9 @@ main section.online-slot-section .choices .choice img {
 }
 main section.online-slot-section .choices .choice:hover img {
   transform: scale(0.8);
+}
+main section.slot-rev-hero img {
+  width: 400px;
 }
 
 footer {

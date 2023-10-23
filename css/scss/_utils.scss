@@ -205,6 +205,13 @@ $viewer-distance: 500px;
             }
         }
     }
+    &.my-col-2{
+        >{
+            *{
+                width: calc(100% / 2 - 10px);
+            }
+        }
+    }
 }
 
 .mt-6{
@@ -338,4 +345,8 @@ a{
 
 video{
     clip-path: inset(1px 1px);
+}
+
+.bg-yellow{
+    background: #ede5c7;
 }
