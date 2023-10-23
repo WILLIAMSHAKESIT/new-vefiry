@@ -862,6 +862,11 @@ a.lined-hover:hover {
   max-width: 70%;
 }
 
+video {
+  -webkit-clip-path: inset(1px 1px);
+          clip-path: inset(1px 1px);
+}
+
 main {
   margin-top: 60px;
 }
@@ -999,7 +1004,7 @@ main section.online-slot-section .choices {
   gap: 15px;
 }
 main section.online-slot-section .choices .choice {
-  width: calc(25% - 10px);
+  width: calc(25% - 30px);
   text-align: center;
 }
 main section.online-slot-section .choices .choice .btn {

@@ -334,3 +334,8 @@ a{
 .vid-container{
     max-width: 70%;
 }
+
+
+video{
+    clip-path: inset(1px 1px);
+}
