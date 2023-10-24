@@ -44,4 +44,14 @@ $(document).ready(function(){
         }
         $(this).find('.material-symbols-outlined').text(`${iconState}`)
     })
+    $(window).scroll(function() {
+        var stickyElement = $('.sticky');
+        var headerHeight = $('header').outerHeight();
+
+        if ($(window).scrollTop() >= headerHeight) {
+          stickyElement.addClass('active');
+        } else {
+          stickyElement.removeClass('active');
+        }
+    });
 })

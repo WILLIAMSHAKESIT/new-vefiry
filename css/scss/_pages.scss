@@ -183,7 +183,16 @@ main{
         &.slot-rev-hero{
          img{
             width: 400px;
+            &.img-sm{
+                width: 200px;
+            }
          }   
+        }
+        &.review-section{
+            .hero-wrapper{
+                border-radius: 10px;
+                overflow: hidden;
+            }
         }
     }
 }
@@ -192,6 +201,10 @@ footer{
     background: #e4e4e4;
     height: 300px;
     padding: 20px;
+    &.no-border{
+        border: none !important;
+        border-color: none !important;
+    }
     .links{
         display: flex;
         justify-content: space-around;
@@ -218,3 +231,4 @@ footer{
         }
     }
 }
+

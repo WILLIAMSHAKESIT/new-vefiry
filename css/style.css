@@ -433,8 +433,72 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   color: #5c5c5c;
 }
 
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.user:hover .user-info-card {
+  display: block;
+}
 .user img {
   width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+.user .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user .user-info-card {
+  min-width: 300px;
+  min-height: 150px;
+  border: 1px solid #cfcfcf;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  top: 40px;
+  border-radius: 5px;
+  padding: 15px;
+  left: 0;
+  display: none;
+}
+.user .user-info-card .user-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+.user .user-info-card .user-top .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.user .user-info-card .user-top .user-info span {
+  font-size: 0.8em;
+}
+.user .user-info-card .user-top .user-info span.user-name {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.user .user-info-card .user-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.user .user-info-card .user-bottom span {
+  font-size: 0.9em;
+}
+.user .user-info-card .btn {
+  margin-top: 15px;
+  min-width: 100%;
 }
 
 .more-vert {
@@ -457,10 +521,14 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1411764706);
   border-radius: 2px;
   display: none;
+  z-index: 10;
 }
 .more-vert ul li {
   width: 100%;
   padding: 10px;
+}
+.more-vert ul li:hover {
+  background-color: #e6e6e6;
 }
 .more-vert ul li a {
   display: flex;
@@ -468,6 +536,10 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   gap: 3px;
   width: 100%;
   height: 100%;
+  font-size: 0.7em;
+}
+.more-vert ul li a span {
+  font-size: 2em;
 }
 
 .post-img {
@@ -521,7 +593,7 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 }
 .custom-pagination * {
   border: none !important;
-  color: #000;
+  color: #777777;
   font-weight: 300;
 }
 .custom-pagination .pagination .page-item.active {
@@ -540,6 +612,97 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   height: 388px;
 }
 
+.review-list {
+  border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  border-radius: 10px;
+  min-height: 100px;
+}
+.review-list .header {
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2117647059);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+}
+.review-list .header:last-child {
+  border-bottom: 0;
+}
+.review-list .table {
+  margin-bottom: 0;
+}
+.review-list .table .custom-pagination {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.review-list .table .custom-pagination .page-item {
+  width: 40px;
+  height: 40px;
+}
+.review-list .table .custom-pagination .page-item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px !important;
+}
+.review-list .table tbody td:first-child {
+  padding-left: 20px;
+}
+.review-list .table tbody td:not(:first-child) {
+  padding-top: 15px;
+}
+
+.table {
+  color: #ffffff !important;
+}
+.table thead tr th {
+  color: rgba(0, 0, 0, 0.5254901961);
+}
+.table tbody tr td {
+  color: rgba(0, 0, 0, 0.768627451) !important;
+}
+
+.slotsiteranking-review-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border: 3px solid #e4e4e4;
+}
+.slotsiteranking-review-card:nth-child(even) {
+  background: #f4f4f4;
+}
+.slotsiteranking-review-card .review, .slotsiteranking-review-card .spins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slotsiteranking-review-card .review .stars, .slotsiteranking-review-card .spins .stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.slotsiteranking-review-card .review .review-text, .slotsiteranking-review-card .spins .review-text {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #c9c3b1;
+  text-decoration-thickness: 3px;
+}
+.slotsiteranking-review-card .avails div {
+  display: flex;
+}
+.slotsiteranking-review-card .avails div .material-symbols-outlined {
+  color: #1aa526;
+}
+.slotsiteranking-review-card .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -555,6 +718,9 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   border: 1px solid rgba(0, 0, 0, 0.3882352941);
   border-radius: 5px;
   overflow: hidden;
+}
+.input-group .input-group-text .material-symbols-outlined {
+  color: #909090 !important;
 }
 
 .main-search-text {
@@ -666,7 +832,8 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 }
 
 .btn {
-  text-align: center;
+  text-align: center !important;
+  justify-content: center;
 }
 .btn.btn-black {
   background-color: #000;
@@ -692,6 +859,11 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   background: unset;
   color: #000;
   border-color: #000;
+}
+.btn.btn-outline-yellow {
+  border: 1px solid #dacc94;
+  color: #dacc94;
+  white-space: nowrap;
 }
 
 .w-fit {
@@ -734,9 +906,16 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 .my-row.my-col-2 > * {
   width: calc(50% - 10px);
 }
+.my-row.my-col-4 > * {
+  width: calc(25% - 10px);
+}
 
 .mt-6 {
   margin-top: 6rem;
+}
+
+.rounded-sm {
+  border-radius: 5px;
 }
 
 .btn.btn-primary-gradient {
@@ -846,6 +1025,10 @@ a.lined-hover:hover {
   border: 1px solid rgba(0, 0, 0, 0.1607843137);
 }
 
+.bordered-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1607843137);
+}
+
 .bg-gray {
   background: #e4e4e4;
 }
@@ -861,6 +1044,19 @@ a.lined-hover:hover {
   font-size: 1.5em;
 }
 
+.font-sm {
+  font-size: 0.9em;
+}
+
+.font-xsm {
+  font-size: 0.7em;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .vid-container {
   max-width: 70%;
 }
@@ -872,6 +1068,26 @@ video {
 
 .bg-yellow {
   background: #ede5c7;
+}
+
+.form-select:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.sticky.active {
+  position: fixed;
+  top: 67px;
+  right: 24%;
+}
+
+.mw-250 {
+  max-width: 250px;
+}
+
+.mb-6 {
+  margin-bottom: 5rem !important;
 }
 
 main {
@@ -1029,11 +1245,22 @@ main section.online-slot-section .choices .choice:hover img {
 main section.slot-rev-hero img {
   width: 400px;
 }
+main section.slot-rev-hero img.img-sm {
+  width: 200px;
+}
+main section.review-section .hero-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 footer {
   background: #e4e4e4;
   height: 300px;
   padding: 20px;
+}
+footer.no-border {
+  border: none !important;
+  border-color: none !important;
 }
 footer .links {
   display: flex;
