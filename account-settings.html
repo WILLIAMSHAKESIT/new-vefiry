@@ -196,142 +196,123 @@
                     <li><a href="account-blog-comments.html">블로그 댓글</a></li>
                     <li><a href="account-forum-comments.html">게시판 댓글</a></li>
                     <li><a href="forum-posts.html">게시판 게시물</a></li>
-                    <li><a href="my-account.html">내 계정</a></li>
+                    <li><a href="account-myaccount.html">내 계정</a></li>
                     <li><a href="account-notifications.html">알림</a></li>
-                    <li class="active"><a href="settings.html">설정</a></li>
+                    <li class="active"><a href="account-settings.html">설정</a></li>
                 </ul>
                 <div>
-                    <div class="bordered-bottom pb-5">
-                        <h5 class="light mb-3">표시 정보</h5>
-                        <p>프로필 카드는 모든 사이트 회원에게 공개됩니다.</p>
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <div>
-                                    <label class="mb-2">표시 이름 *</label>
-                                    <div class="input-group flex-nowrap">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <label class="mb-2">제목</label>
-                                    <div class="input-group flex-nowrap">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
+                    <h4>이메일 알림</h4>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
+                        <div>
+                            <h6 class="">Inbox</h6><br>
+                            <span>새 메시지</span>
+                        </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
                         </div>
                     </div>
-                    <div class="mt-5 bordered-bottom pb-5">
-                        <h5 class="light mb-3">계정</h5>
-                        <p>개인정보를 업데이트하세요.</p>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
                         <div>
-                            <p class="mb-0">로그인 이메일:</p>
-                            <p class="mb-0">slotpang12@gmail.com</p>
-                            <p class="mb-0">(로그인 이메일은 변경할 수 없습니다.)</p>
+                            <h6 class="">Invoices</h6><br>
+                            <span>인보이스 발행됨</span>
                         </div>
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <div>
-                                    <label class="mb-2">닉네임</label>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="input-group flex-nowrap">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <span class="material-symbols-outlined yellow-dark-3">
-                                            public
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <label class="mb-2">성</label>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="input-group flex-nowrap">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <span class="material-symbols-outlined yellow-dark-3">
-                                            lock
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <label class="mb-2">전화번호</label>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="input-group flex-nowrap">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <span class="material-symbols-outlined yellow-dark-3">
-                                            public
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <label class="mb-2">이메일 *</label>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="input-group flex-nowrap">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <span class="material-symbols-outlined yellow-dark-3">
-                                            lock
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-end mt-4 gap-sm">
-                            <button class="btn btn-outline-dark-yellow w-fit" data-bs-toggle="modal" data-bs-target="#cancelModal">변경사항 취소</button>
-                            <button class="btn btn-dark-yellow w-fit">정보 업데이트</button>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
                         </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
                         <div>
-                            <h4>계정 설정</h4>
-                            <p>개인정보를 업데이트하세요.</p>
+                            <h6 class="">게시판</h6><br>
+                            <span>'좋아요' 또는 반응</span>
                         </div>
-                        <div class="accordion accordion-flush" id="one-ac">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <div class="accordion-button collapsed py-5" type="button" data-bs-toggle="collapse" data-bs-target="#ac-one" aria-expanded="false">
-                                    커뮤니티 페이지 URL
-                                </div>
-                              </h2>
-                              <div id="ac-one" class="accordion-collapse collapse" data-bs-parent="#one-ac">
-                                <div class="accordion-body">
-                                    <a href="#">https://www.slotpang1.com/profile/slotpang12/profile</a><br>
-                                    <a href="#" class="underlined">URL 편집</a>
-                                </div>
-                              </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
+                        <div>
+                            <h6 class="">댓글 또는 답글</h6>
+                        </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
+                        <div>
+                            <h6 class="">새 게시물</h6>
+                        </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="py-4 bordered-bottom">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="">일간 또는 주간 활동 요약</h6>
+                            <div class="">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                </div>                              
                             </div>
-                            <!-- // -->
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <div class="accordion-button collapsed py-5" type="button" data-bs-toggle="collapse" data-bs-target="#ac-two" aria-expanded="false">
-                                    프로필 공개
-                                </div>
-                              </h2>
-                              <div id="ac-two" class="accordion-collapse collapse" data-bs-parent="#one-ac">
-                                <div class="accordion-body">
-                                    <span>프로필 페이지 및 SNS 계정을 비공개로 설정할 수 있습니다.</span><br>
-                                    <a href="#" class="underlined">프로필 비공개하기</a>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- // -->
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <div class="accordion-button collapsed py-5" type="button" data-bs-toggle="collapse" data-bs-target="#ac-three" aria-expanded="false">
-                                    차단 회원
-                                </div>
-                              </h2>
-                              <div id="ac-three" class="accordion-collapse collapse" data-bs-parent="#one-ac">
-                                <div class="accordion-body">
-                                    <span>차단된 회원이 없습니다.</span><br>
-                                </div>
-                              </div>
-                            </div>
+                        </div>
+                        <div class="form-check radio mb-3">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                매일
+                            </label>
+                        </div>
+                        <div class="form-check radio mb-3">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                            <label class="form-check-label" for="exampleRadios2">
+                                매주
+                            </label>
+                        </div>
+                    </div>
+                    <div class="py-4 bordered-bottom">
+                        <h6 class="mb-3">블로그</h6>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6 class="">블로그 구독</h6>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input button-check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
+                        <div>
+                            <h6 class="">게시물 댓글</h6>
+                        </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
+                        </div>
+                    </div>
+                    <div class="py-4 d-flex align-items-center justify-content-between bordered-bottom">
+                        <div>
+                            <h6 class="">게시물 또는 댓글에 '좋아요'가 추가됨</h6>
+                        </div>
+                        <div class="">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>                              
                         </div>
                     </div>
                 </div>

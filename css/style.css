@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* noto-sans-kr-100 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -1292,6 +1293,71 @@ textarea:focus-visible {
 
 .mh-300 {
   min-height: 300px;
+}
+
+.form-switch .form-check-input {
+  width: 3.6em;
+  height: 25px;
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+  background-color: #737373;
+}
+.form-switch .form-check-input:checked {
+  background-color: #a2986e;
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+}
+
+.radio .form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.radio .form-check-input:checked {
+  background-color: #a3996f;
+  border-color: #797979;
+  width: 1.5em;
+  height: 1.5em;
+  outline: unset;
+  border: unset;
+}
+
+.button-check {
+  width: 100px !important;
+  border-radius: 0 !important;
+  height: 41px !important;
+  --bs-form-switch-bg:unset !important;
+  position: relative;
+  cursor: pointer;
+  background-color: unset !important;
+  border: 1px solid #a3996f !important;
+  color: #a3996f !important;
+}
+.button-check:before {
+  content: "구독 해제";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a3996f !important;
+  white-space: nowrap;
+}
+.button-check:checked {
+  background-color: #a3996f !important;
+}
+.button-check:checked:before {
+  content: "구독";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
 }
 
 main {
