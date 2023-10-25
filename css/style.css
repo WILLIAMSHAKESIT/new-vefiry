@@ -863,6 +863,10 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   background: #3F7652;
   color: #fff;
 }
+.btn.btn-dark-blue {
+  background: #074151;
+  color: #fff;
+}
 .btn.btn-gradient-red-blue {
   background: linear-gradient(69deg, #1a53bd, #ff491b);
   color: #fff;
