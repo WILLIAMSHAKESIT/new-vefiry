@@ -194,8 +194,170 @@ main{
                 overflow: hidden;
             }
         }
-        &.popular-slot{
-            
+        &.account-section{
+            .profile-cover{
+                background: #6d664a;
+                height: 250px;
+                position: relative;
+                .cover-change{
+                    position: absolute;
+                    top: 40px;
+                    left: 40px;
+                    width: 150px;
+                    height: 50px;
+                    cursor: pointer !important;
+                    label{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 10;
+                        cursor: pointer;
+                    }
+                    input{
+                        height: 100%;
+                        width: 100%;
+                        visibility: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 10;
+                        cursor: pointer;
+                    }
+                    .visible-icon{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: 5px 7px;
+                        transition: 0.5s ease-in-out;
+                        cursor: pointer;
+                        z-index: 0;
+                        i{
+                            font-size: 1.3em;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        span{
+                            white-space: nowrap;
+                            color: #fff;
+                            visibility: hidden;
+                        }
+                        // &:hover{
+                        //     background-color: #00000067;
+                        //     span{
+                        //         visibility: visible;
+                        //     }
+                        // }
+                    }
+                    &:hover{
+                        .visible-icon{
+                            background-color: #00000067;
+                            span{
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+                .profile-details{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    bottom: 10px;
+                    left: 20px;
+                    .file-input{
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        border-radius: 100px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        label{
+                            width: 100%;
+                            height:100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 10;
+                        }
+                        input{
+                            width: 100%;
+                            height:100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 10;
+                        }
+                        .avatar{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height:100%;
+                        }
+                        .hover-cam{
+                            display: none;
+                        }
+                        &:hover{
+                            .hover-cam{
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #00000088;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 8;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-size: 1.8em;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    .counts{
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        a{
+                            color: #fff;
+                            span{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .more-vert{
+                    width: fit-content;
+                    color: #fff;
+                    right: 20px;
+                    bottom: 20px;
+                    position: absolute;
+                }
+            }
+            .profile-bio{
+                border: 1px solid #00000029;
+                height: 99px;
+                margin-top: 20px;
+                padding: 15px;
+                color: #adacac;
+                &:hover{
+                    background: #e4e4e4;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

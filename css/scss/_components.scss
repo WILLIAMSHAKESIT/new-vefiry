@@ -594,13 +594,16 @@ header{
 
 .user-profile{
     position: relative;
+    user-select: none;
+    cursor: pointer;
     .profile-drop{
         position: absolute;
         top: 42px;
-        right: 71px;
+        right: 50px;
         background: #fff;
         width: fit-content;
         border: 1px solid #00000036;
+        display: none;
         ul{
             width: 100%;
             height: 100%;
@@ -618,9 +621,71 @@ header{
                     width: 100%;
                     height: 100%;
                 }
+                &:hover{
+                    a{
+                        color: #838383 !important;
+                    }
+                }
                 &:last-child{
                     border-top: 1px solid #00000036;
                 }
+            }
+        }
+    }
+}
+
+
+$color_1: #fff;
+$background-color_1: #4245a8;
+
+.file-input__input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.file-input__label {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $color_1;
+	font-size: 14px;
+    width: 100px;
+    height: 100px;
+	svg {
+		height: 16px;
+		margin-right: 4px;
+	}
+}
+
+
+.account-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    li{
+        padding: 15px 10px;
+        border-top: 5px solid #dacc9400;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        &:hover{
+            border-top: 5px solid #dacc94;
+            a{
+                color: #dacc94;
+            }
+        }
+        &.active{
+            border-top: 5px solid #a3996f;
+            a{
+                color: #a3996f;
             }
         }
     }

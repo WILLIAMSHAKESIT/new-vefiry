@@ -739,15 +739,20 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 
 .user-profile {
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .user-profile .profile-drop {
   position: absolute;
   top: 42px;
-  right: 71px;
+  right: 50px;
   background: #fff;
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  display: none;
 }
 .user-profile .profile-drop ul {
   width: 100%;
@@ -768,8 +773,64 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   width: 100%;
   height: 100%;
 }
+.user-profile .profile-drop ul li:hover a {
+  color: #838383 !important;
+}
 .user-profile .profile-drop ul li:last-child {
   border-top: 1px solid rgba(0, 0, 0, 0.2117647059);
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  width: 100px;
+  height: 100px;
+}
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
+
+.account-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.account-nav li {
+  padding: 15px 10px;
+  border-top: 5px solid rgba(218, 204, 148, 0);
+}
+.account-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.account-nav li:hover {
+  border-top: 5px solid #dacc94;
+}
+.account-nav li:hover a {
+  color: #dacc94;
+}
+.account-nav li.active {
+  border-top: 5px solid #a3996f;
+}
+.account-nav li.active a {
+  color: #a3996f;
 }
 
 .btn {
@@ -903,13 +964,22 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 .btn {
   text-align: center !important;
   justify-content: center;
+  border-radius: 0;
 }
 .btn.btn-black {
   background-color: #000;
 }
+.btn.btn-outline-black {
+  border-color: #000;
+  color: #000;
+}
 .btn.btn-dark-yellow {
   background: #A3996F;
   color: #fff;
+}
+.btn.btn-outline-dark-yellow {
+  border: 1px solid #A3996F;
+  color: #A3996F;
 }
 .btn.btn-dark-green {
   background: #3F7652;
@@ -942,6 +1012,12 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.tooltip-white {
+  --bs-tooltip-bg: white;
+  --bs-tooltip-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1843137255);
 }
 
 .text-left {
@@ -1024,6 +1100,14 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
 
 .bolder {
   font-weight: 900;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.lighter {
+  font-weight: 100;
 }
 
 .main-heading-text {
@@ -1169,6 +1253,45 @@ video {
 
 .mb-6 {
   margin-bottom: 5rem !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.bullet {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bullet.sm {
+  width: 10px;
+  height: 10px;
+}
+.bullet.md {
+  width: 30px;
+  height: 30px;
+}
+.bullet.dark-green {
+  background: #a3996f;
+}
+
+.gray-2 {
+  background-color: #aaa9a9;
+}
+
+textarea:focus-visible {
+  outline: none !important;
+  border: none !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.mh-300 {
+  min-height: 300px;
 }
 
 main {
@@ -1333,6 +1456,161 @@ main section.review-section .hero-wrapper {
   border-radius: 10px;
   overflow: hidden;
 }
+main section.account-section .profile-cover {
+  background: #6d664a;
+  height: 250px;
+  position: relative;
+}
+main section.account-section .profile-cover .cover-change {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer !important;
+}
+main section.account-section .profile-cover .cover-change label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+main section.account-section .profile-cover .cover-change input {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+main section.account-section .profile-cover .cover-change .visible-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 7px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 0;
+}
+main section.account-section .profile-cover .cover-change .visible-icon i {
+  font-size: 1.3em;
+  color: #fff;
+  cursor: pointer;
+}
+main section.account-section .profile-cover .cover-change .visible-icon span {
+  white-space: nowrap;
+  color: #fff;
+  visibility: hidden;
+}
+main section.account-section .profile-cover .cover-change:hover .visible-icon {
+  background-color: rgba(0, 0, 0, 0.4039215686);
+}
+main section.account-section .profile-cover .cover-change:hover .visible-icon span {
+  visibility: visible;
+}
+main section.account-section .profile-cover .profile-details {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 10px;
+  left: 20px;
+}
+main section.account-section .profile-cover .profile-details .file-input {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main section.account-section .profile-cover .profile-details .file-input label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+main section.account-section .profile-cover .profile-details .file-input input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+main section.account-section .profile-cover .profile-details .file-input .avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main section.account-section .profile-cover .profile-details .file-input .hover-cam {
+  display: none;
+}
+main section.account-section .profile-cover .profile-details .file-input:hover .hover-cam {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+  color: #fff;
+}
+main section.account-section .profile-cover .profile-details p {
+  margin-bottom: 0;
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: 600;
+}
+main section.account-section .profile-cover .profile-details .counts {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main section.account-section .profile-cover .profile-details .counts a {
+  color: #fff;
+}
+main section.account-section .profile-cover .profile-details .counts a span {
+  margin-right: 10px;
+}
+main section.account-section .profile-cover .more-vert {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+main section.account-section .profile-bio {
+  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+  height: 99px;
+  margin-top: 20px;
+  padding: 15px;
+  color: #adacac;
+}
+main section.account-section .profile-bio:hover {
+  background: #e4e4e4;
+  cursor: pointer;
+}
+
 footer {
   background: #e4e4e4;
   height: 300px;

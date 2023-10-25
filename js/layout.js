@@ -54,4 +54,13 @@ $(document).ready(function(){
           stickyElement.removeClass('active');
         }
     });
+    $('.user-profile').click(function(e){
+        e.stopPropagation()
+        $(this).find('.profile-drop').toggle()
+    })
+    $(window).click(function(){
+        $('.user-profile .profile-drop').hide()
+    })
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
