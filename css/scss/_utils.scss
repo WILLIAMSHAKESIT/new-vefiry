@@ -26,6 +26,13 @@
     .input-group-text{
         background-color: #ebe5d6;
         color:#000;
+        
+    }
+    input{
+        text-align: center;
+    }
+    ::placeholder {
+        text-align: center;
     }
 }
 .my-row{
@@ -72,12 +79,12 @@
 
 
 // Carousel configuration parameters
-$item-width: 40%; // Now we can use percentages!
+$item-width: 50%; // Now we can use percentages!
 $item-separation: 0px; // This now is set with Js
-$viewer-distance: 500px;
+$viewer-distance: 1000px;
 
 .carousel {
-	padding: 20px;
+	padding: 5px;
 
 	perspective: $viewer-distance;
 	overflow: hidden;
@@ -85,6 +92,7 @@ $viewer-distance: 500px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    margin: 5em 0;
 	> * {
 		flex: 0 0 auto;
 	}
@@ -101,6 +109,7 @@ $viewer-distance: 500px;
             box-sizing: border-box;
             padding: 0 $item-separation;
             display: block;
+            padding: 0;
             &:not(:first-of-type) {
                 position: absolute;
                 left: 0;
@@ -192,6 +201,9 @@ $viewer-distance: 500px;
         color: #dacc94;
         white-space: nowrap;
     }
+}
+.text-dark{
+    color: #000 !important;
 }
 .w-fit{
     width: fit-content;
