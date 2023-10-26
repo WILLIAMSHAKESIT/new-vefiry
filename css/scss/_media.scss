@@ -3,3 +3,389 @@
         max-width: 1000px;
     }
 }
+
+@media(max-width:1051px){
+    .headings{
+        h5{
+            font-size: 3em;
+            white-space: wrap;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .mobile{
+        display: block;
+    }
+    .container{
+        max-width: calc(100% - 18px) !important;
+        padding: 0 !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+    .main-heading-text-2{
+        font-size: 2em;
+    }
+    .mobile-toggle{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .fa-circle-user{
+                color: #fff;
+                font-size: 2.1em;
+            }
+        }
+        .menu{
+            color: #e5e5e5;
+            font-size: 2em;
+        }
+    }
+    header{
+        nav{
+            .container-fluid{
+                height: 100%;
+                .navbar-nav{
+                    position: fixed;
+                    height: 100%;
+                    width: 250px;
+                    background: #fff;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 20000;
+                    display: flex;
+                    overflow: auto;
+                    transition: 0.5s ease-in-out;
+                    transform: translateX(100%);
+                    &.show{
+                        transform: translateX(0%);
+                    }
+                    li{
+                        order: 2;
+                        position: relative;
+                        i{
+                            display: block !important;    
+                            margin-right: 20px;       
+                        }
+                        a{
+                            color: #000 !important;
+                            width: 100%;
+                            &:not(.first){
+                                padding: 5px 33px !important;
+                                justify-content: flex-end !important;
+                                padding-left: 0 !important;
+                            }
+                        }
+                        &.dropdown{
+                            flex-direction: column;
+                        }
+                        .dropdown-menu{
+                            position: relative !important;
+                            border-radius: 0 !important;
+                            top: unset !important; 
+                            left:unset !important;
+                            transform: unset !important;
+                            padding: 0 !important;
+                            background: #fff !important;
+                            width: 100% !important;
+                            border: 0 !important;   
+                            display: none;              
+                        }
+                        .mobile-div{
+                            display: flex;
+                            width: 100%;
+                            justify-content: flex-end;
+                            align-items: center;
+                            a{
+                                width: fit-content;
+                            }
+                        }
+                    }
+                    >{
+                        li{
+                            &:last-child{
+                                order: 1 !important;
+                                background-color: #e5e5e5;
+                                height: 174px;
+                                position: relative;
+                                a{
+                                    color: #000 !important;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    position: absolute;
+                                    right: 25px;
+                                    bottom: 22px;
+                                    height: fit-content;
+                                    padding: 0 !important;
+                                    width: fit-content;
+                                    span{
+                                        color:#000 !important;
+                                    }
+                                    i{
+                                        margin-right: 0;
+                                    }
+                                }
+                                .close{
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 15px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        &.mt-0{
+            margin-top: 47px !important;
+        }
+        section{
+            &.hero-section{
+                .hero-title{
+                    font-size: 2.5em;
+                }
+            }
+            &.content-section{
+                .google-ss{
+                    width: 100%;
+                }
+                .why-choose{
+                    .choose-item{
+                        width: 100%;
+                        flex-direction: column;
+                        .left-side{
+                            width: 72%;
+                            height: 83px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            &.section-latest{
+                padding-bottom: 10px;
+            }
+            &.slot-rev-hero{
+                img{
+                    width: 209px;
+                    margin-left: -57px
+                }
+                h1{
+                    font-size: 0.8em !important;
+                    margin-bottom: 10px !important;
+                }
+                p{
+                    font-size: 0.6em;
+                }
+            }
+            &.casino-games-section{
+                .px-5{
+                    padding: 0 !important;
+                }
+            }
+            &.hero-sub-section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                video{
+                    width: 90%;
+                    object-fit: cover;
+                    height: 150px;
+                }
+                &.contain{
+                    video{
+                        width: 100%;
+                        object-fit: contain;
+                        height: 150px;
+                    }
+                }
+            }
+            &.event-section{
+                .col-8{
+                    width: 90%;
+                }
+                .bordered{
+                    &.p-5{
+                        padding: 10px !important;
+                    }
+                }
+            }
+            &.review-section{
+                .mobile-top-rev{
+                    .search{
+                        color: #818181;
+                    }
+                    .user{
+                        font-size: 1.5em;
+                        color: #a0a09f;
+                    }
+                }
+            }
+            &.review-section-search{
+                .container{
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+            &.popular-slot{
+                table{
+                    .p-5{
+                        padding: 10px !important;
+                    }
+                    thead{
+                        tr{
+                            th{
+                                font-size: 0.7em !important;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                font-size: 0.7em !important;
+                            }
+                        }
+                    }
+                }
+                iframe{
+                    height: 200px !important;
+                }
+            }
+            &.slot-rev-hero{
+                img{
+                    &.img-sm{
+                        width: 123px;
+                    }
+                }
+            }
+            &.online-slot-section{
+                .choices{
+                    .choice{
+                        align-items: center;
+                        img{
+                            width: 157px;
+                        }
+                        .btn{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-title{
+        font-size: 1.3em;
+
+    }
+    .sm-col-1{
+        flex-direction: column;
+        gap: 10px;
+        >{
+            *{
+                width: 100% !important;
+            }
+        }
+    }
+    .sm-col-2{
+        flex-wrap: wrap;
+        >{
+            *{
+                width: calc(100% / 2 - 5px) !important;
+            }
+        }
+    }
+    footer{
+        height: fit-content;
+        .links{
+            flex-wrap: wrap;
+            gap: 4px;
+            ul{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .my-card{
+        img{
+            height: 101px;
+            object-fit: cover;
+        }
+        .my-card-footer{
+            .title{
+                font-size: 12px;
+            }
+        }
+    }
+    .sm-text-center{
+        text-align: center;
+    }
+    .slotsiteranking-review-card{
+        flex-wrap: wrap;
+    }
+    .sm-100{
+        width: 100%;
+    }
+    .sm-mb{
+        margin-bottom: 10px;
+    }
+    .header-search{
+        display: flex;
+        align-items: center;
+        padding: 0px 15px !important;
+        height: 50px;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        .controls{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:40px;
+                height: 100%;
+                color: #7c7c7c;
+            }
+        }
+    }
+    .toggle-search{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 20px !important;
+    }
+    .desktop-table{
+        display: none;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .mobile-pagination{
+        display: flex;
+    }
+    .post-bottom-content{
+        flex-direction: row-reverse;
+        .like-btn{
+            display: none !important;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .headings{
+        h5{
+            font-size: 2em;
+        }
+    }
+}
+

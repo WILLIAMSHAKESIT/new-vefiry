@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/google-icons.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
 
     <!-- js --> 
     <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
@@ -23,19 +24,34 @@
               <a class="navbar-brand logo-wrapper" href="#">
                 <img src="/img/logo.webp" alt="Slot pang log">
               </a>
+              <div class="mobile-toggle">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="yellow">로그인</span>
+                </div>
+                <a href="#" class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+              </div>
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="index.html">
-                    HOME
-                  </a>
-                  <ul class="dropdown-menu">
+                <div class="mobile-div">
+                    <i class="fa-solid fa-plus mr-1"></i>
+                    <a class="nav-link dropdown-toggle" href="index.html">
+                        HOME
+                    </a>
+                </div>
+                <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="inquire.html">문의</a></li>
-                  </ul>
+                </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="slot-guarantee.html">
-                        보증 업체
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="slot-guarantee.html">
+                            보증 업체
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="slot-guarantee-crazyslot.html">크레이지슬롯</a></li>
                         <li><a class="dropdown-item" href="slot-guarantee-vic2casino.html">빅투카지노</a></li>
@@ -55,17 +71,23 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="event.html">
-                        이벤트
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="event.html">
+                            이벤트
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="slotpang-event.html">슬롯팡 이벤트</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="casinogames.html">
-                        카지노게임
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="casinogames.html">
+                            카지노게임
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="casinofreeplay.html">바카라 무료체험</a></li>
                         <li><a class="dropdown-item" href="casinoinfo.html">카지노 팁</a></li>
@@ -78,9 +100,12 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="onlineslot.html">
-                        온라인슬롯
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="onlineslot.html">
+                            온라인슬롯
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="slotreview.html">슬롯 리뷰</a></li>
                         <li><a class="dropdown-item" href="onlineslotsite.html">온라인 슬롯</a></li>
@@ -91,9 +116,12 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="slotpangnews.html">
-                        뉴스
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="slotpangnews.html">
+                            뉴스
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="slotpangnews-list.html">스포츠 뉴스</a></li>
                         <li><a class="dropdown-item" href="slotpangnews-list.html">글로벌 뉴스</a></li>
@@ -102,9 +130,12 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="freeslot.html">
-                        무료체험
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link dropdown-toggle" href="freeslot.html">
+                            무료체험
+                        </a>
+                    </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="baccara.html">바카라</a></li>
                         <li><a class="dropdown-item" href="freeslot-content.html">프라그마틱</a></li>
@@ -116,21 +147,23 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="review.html">
-                        후기게시판
-                    </a>
+                    <div class="mobile-div">
+                        <i class="fa-solid fa-plus mr-1"></i>
+                        <a class="nav-link" href="review.html">
+                            후기게시판
+                        </a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex gap-sm" href="">
-                        <span class="material-symbols-outlined profile-icon">account_circle</span>
+                <li class="nav-item first">
+                    <div class="close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <a class="nav-link d-flex gap-sm" href="home.html">
+                        <i class="fa-solid fa-circle-user"></i>
                         <span class="yellow">로그인</span>
                     </a>
                 </li>
               </ul>
-              <!-- <a href="#" class="btn b">
-                <span class="material-symbols-outlined">person</span>
-                로그인
-              </a> -->
             </div>
         </nav>
     </header>
@@ -138,15 +171,15 @@
         <section class="hero-section">
             <div class="container">
                 <div class="input-group flex-nowrap main-search-text">
-                    <input type="text" class="form-control" placeholder="search...">
+                    <input type="text" class="form-control" placeholder="Search...">
                     <span class="input-group-text">
                         <span class="material-symbols-outlined">search</span>
                     </span>
                 </div>
-                <h1 class="hero-title yellow">슬롯팡 검증사이트</h1>
+                <h1 class="hero-title yellow mt-4">슬롯팡 검증사이트</h1>
                 <h5 class="sub-title">슬롯사이트 | 온라인슬롯 | 슬롯커뮤니티 【슬롯팡】</h5>
                 <h5 class="sub-title">슬롯사이트 순위 | 안전 슬롯사이트 | 슬롯팡 보증사이트 | 카지노 뉴스</h5>
-                <div class="my-row my-col-2">
+                <div class="my-row my-col-2 sm-col-1">
                     <a href="#"><img src="img/banner-gif/1.gif" alt=""></a>
                     <a href="#"><img src="img/banner-gif/2.gif" alt=""></a>
                     <a href="#"><img src="img/banner-gif/3.gif" alt=""></a>
@@ -233,7 +266,7 @@
                         </a>
                     </figure>
                 </div>
-                <h3 class="sub-title-no-size">주의할 점 3가지!</h3>
+                <h3 class="sub-title-no-size text-dark">주의할 점 3가지!</h3>
                 <div class="keep-in-mind">
                     <div class="item">
                         <p>1. 회원 가입 시 최소한의 본인 인증 절차도 거치지 않는 온라인 카지노 주의하세요.</p>
@@ -287,15 +320,15 @@
                 </div>
                 <div class="my-5">
                     <h3 class="sub-title-no-size text-dark text-left">온라인슬롯 추천</h3>
-                    <p><span class="text-danger">온라인 슬롯</span> 게임 추천을 한다는 것은 각자의 플레이 스타일마다 게임 방식이 모두 다르기 때문에 추천 드리기가 제일 애매한 부류의 온라인 카지노 게임 중 하나 입니다.</p><br>
-                    <p>근래 온라인 슬롯 사이트에 수많은 온라인 슬롯 게임이 새롭게 제공되기 때문에 각각에 장점, 장르가 다르며 추천을 드려도 어떤 사람에는 최고, 어떤 사람에겐 최악이 될 수 있다는 점이죠.</p><br>
+                    <p><span class="text-danger bold">온라인 슬롯</span> 게임 추천을 한다는 것은 각자의 플레이 스타일마다 게임 방식이 모두 다르기 때문에 추천 드리기가 제일 애매한 부류의 온라인 카지노 게임 중 하나 입니다.</p>
+                    <p>근래 온라인 슬롯 사이트에 수많은 온라인 슬롯 게임이 새롭게 제공되기 때문에 각각에 장점, 장르가 다르며 추천을 드려도 어떤 사람에는 최고, 어떤 사람에겐 최악이 될 수 있다는 점이죠.</p>
                     <p>
                         선뜻 슬롯을 추천을 드리지 못하지만 제가 직접 온라인 슬롯을 플레이한 후 장점 및 소개를 올려 두었습니다.
                         ​온라인 슬롯 추천글을 확인 하시고 자신에게 맞는 온라인 슬롯 글 및 슬롯 후기 영상을 확인하고 게임을 진행 해 보시는 걸 추천 드립니다.
                     </p>
                     <p>​또한 온라인 슬롯 또는 카지노 게임 바카라 무료 플레이를 해보시고 시작하시는 것을 적극 추천드립니다.</span>
                 </div>
-                <div class="row">
+                <div class="row sm-col-1">
                     <div class="col-6">
                         <h3 class="sub-title-no-size yellow-dark">온라인 카지노</h3>
                         <div class="thumb-item  mb-2">
@@ -419,7 +452,7 @@
                         <span class="material-symbols-outlined">arrow_forward_ios</span>
                     </a>
                 </div>
-                <div>
+                <div class="desktop">
                     <h2 class="sub-title-no-size text-dark text-left">온라인슬롯 후기 영상</h2>
                     <div class="d-flex justify-content-between">
                         <span>온라인슬롯 동영상</span>
@@ -481,7 +514,7 @@
                     </div>
                     <div class="slot-recommend mt-6">
                         <h1 class="sub-title-no-size yellow mb-5">슬롯사이트 순위 2023년 추천 정보</h1>
-                        <div class="row align-items-center">
+                        <div class="row align-items-center sm-col-1">
                             <div class="col-5">
                                 <img class="reco-img" src="img/slot-recommend.webp" alt="Phone with coins">
                             </div>
@@ -552,9 +585,12 @@
                         <span>-입금/출금 걱정 없이 믿고 플레이할 수 있는 슬롯사이트를 원하시는 회원님</span><br>
                     </p>
                     <p>슬롯팡에서는 확실한 검증이 끝난 안전 슬롯 사이트를 추천드립니다. </p>
-                    <div class="row mt-6">
-                        <div class="col-5"><img src="img/casino-exp-img3.webp" alt=""></div>
-                        <div class="col-7">
+                    <div class="row mt-6 align-items-center sm-col-1">
+                        <div class="col-6 relative">
+                            <h1 class="centered-absolute dx-font nowrap text-white">온라인슬롯 사이트</h1>
+                            <img src="img/casino-exp-img3.webp" alt="">
+                        </div>
+                        <div class="col-6">
                             <div class="mb-5">
                                 <p class="bold">온라인 슬롯 사이트는 매달 셀 수 없이 생겨나는 추세인데 여기서 어떻게 나와 잘 맞는 사이트를 찾을까요? ​</p>
                                 <p>온라인 슬롯 사이트 들의 선호도는 당연히 다르겠지만 슬롯팡 에서 추천드리는 안전 슬롯사이트 들이 가장 좋은 예시입니다. 모든 슬롯게임 이 회원님께 가장 잘 맞는 슬롯게임 은 아니지만 가장 잘 맞춰가는 온라인 슬롯 사이트 들을 선정해 드립니다. 추천 온라인 슬롯 사이트들은 다양한 종류의 게임이 제공되고 있으므로 새롭고 다양하게 온라인슬롯 을 즐길 수 있습니다.</p>
@@ -565,7 +601,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-6 align-items-center">
+                    <div class="row mt-6 align-items-center sm-col-1">
                         <div class="col-7">
                             <div class="mb-5">
                                 <p>무료로 온라인 슬롯 을 연습할 수 있습니다.  슬롯 커뮤니티 슬롯팡에서 제공하고 있는 무료게임을 통해 이용해 볼 수 있으며, 온라인슬롯 머신 게임은 릴이 다 다르기 때문에 무작위로 조합을 선택하는 연습이 필요하다고 말씀드리고 싶습니다. 온라인슬롯 게임에서 승리를 원하신다면 조합을 신중하게 선택을 하셔야합니다. 실제 회원님 돈으로 플레이 하기전에 무료 슬롯 사이트에 방문하셔서 이용하실 게임을 먼저 연습하시고 그다음에 실제 회원님 돈으로 게임을 하시는게 좋습니다. </p>
@@ -579,7 +615,10 @@
                                 <p>슬롯을 이용하기 전 슬롯 커뮤니티 슬롯팡에서 온라인 슬롯 머신 기호를 외우신 후 게임을 이용하신다면 큰 도움이 되실겁니다. 내가 온라인슬롯 게임을 플레이하면서 이겼는지 졌는지 이미 프로그래밍 되어 자동으로 결과가 나옵니다. 하지만 온라인 슬롯을 즐기기 위해서는 게임에 룰을 먼저 알고 하시는 게 좋습니다. </p>
                             </div>
                         </div>
-                        <div class="col-5"><img src="img/casino-exp-img3.webp" alt=""></div>
+                        <div class="col-5 relative">
+                            <h1 class="centered-absolute dx-font nowrap text-white">온라인슬롯 팁</h1>
+                            <img src="img/casino-exp-img4.webp" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="faqs">
@@ -605,7 +644,7 @@
                 </div>
                 <div class="headings my-5">
                     <h5 class="mb-1 text-dark">온라인 카지노</h5>
-                    <span class="">온라인 카지노란 시간과 장소에 구애 받지 않고 언제 어디서 편리하게 카지노를 즐길 수 있는 서비스를 제공합니다. ​바카라,슬롯머신, 블랙잿, 룰렛과 같은 오프라인 카지노에서 플레이 가능한 게임들을 온라인상으로 제공합니다. ​일반적으로 온라인카지노 승률은 오프라인카지노와 같은 확률을 제공하지만 때로는 승률이 더 좋습니다.</span>
+                    <span class="text-left">온라인 카지노란 시간과 장소에 구애 받지 않고 언제 어디서 편리하게 카지노를 즐길 수 있는 서비스를 제공합니다. ​바카라,슬롯머신, 블랙잿, 룰렛과 같은 오프라인 카지노에서 플레이 가능한 게임들을 온라인상으로 제공합니다. ​일반적으로 온라인카지노 승률은 오프라인카지노와 같은 확률을 제공하지만 때로는 승률이 더 좋습니다.</span>
                 </div>
                 <div class="mb-5">
                     <h2 class="sub-title-no-size text-dark text-left mb-3">온라인 카지노란 ? </h2>
@@ -623,41 +662,42 @@
                     <p>그렇지만 여기서 주의해야 하는 사항이 있습니다. 온라인 카지노 사이트들은 대부분 이벤트,보너스 등 회원들에게 제공해 주는 점이 있습니다.​ ​그런데 이상할 정도로 이벤트를 많이 제공한다면 한번 의심을 해보는 게 좋습니다.</p>
                 </div>
                 <div>
-                    <h1 class="main-heading-text-2 text-dark text-center mb-5">온라인 카지노 게임</h1>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-4">
+                    <h1 class="main-heading-text-2 text-dark text-center mb-5 dx-font">온라인 카지노 게임</h1>
+                    <div class="row justify-content-center mb-4 sm-col-1">
+                        <div class="col-4 home-card">
                             <img src="img/bgs/card-bg2.webp">
                             <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
                             <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
                         </div>
-                        <div class="col-4">
-                            <img src="img/bgs/card-bg2.webp">
-                            <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
-                            <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-4">
-                            <img src="img/bgs/card-bg2.webp">
-                            <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
-                            <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/bgs/card-bg2.webp">
-                            <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
-                            <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
+                        <div class="col-4 home-card">
+                            <img src="img/bgs/3.webp">
+                            <h1 class="text-center sub-title-no-size text-dark my-3">텍사스  홀덤<br><span class="nowrap">(Texas holdem)</span></h1>
+                            <p>플레이어들이 본인이 가지고 있는 카드 조합을 확인하고 금액을 배팅한 후, 서로의 카드를 모두 공개하여 그 결과 가장 높은 카드 조합을 가진 플레이어가 승리하는 게임​ 입니다.</p>
                         </div>
                     </div>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-4">
-                            <img src="img/bgs/card-bg2.webp">
-                            <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
-                            <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
+                    <div class="row justify-content-center mb-4 sm-col-1">
+                        <div class="col-4 home-card">
+                            <img src="img/bgs/4.webp">
+                            <h1 class="text-center sub-title-no-size text-dark my-3">슬롯머신<br>(Slotmachine)</h1>
+                            <p>단순히 레버를 당기거나 버튼을 누르면 자동으로 무늬를 맞추는 게임이다. 직접 하는 게 아니라 100% 운에 의해 돈을 딸 수 있는 게임이지만, 다양한 게임방식과 여러가지 테마를 제공해 온라인 카지노 또는 오프라인 카지노에서도 많은 인기를 얻고있는 게임입니다.</p>
                         </div>
-                        <div class="col-4">
-                            <img src="img/bgs/card-bg2.webp">
-                            <h1 class="text-center sub-title-no-size text-dark my-3">바카라<br>(Bacara)</h1>
-                            <p>플레잉 카드를 이용한 게임 중 하나 뱅커 혹은 플레이어 둘 중 한쪽을 택해 9 이하의 높은 점수로 대결하는 게임입니다.​ ​카지노에서 가장 단순한 게임으로 인기가 많습니다.</p>
+                        <div class="col-4 home-card">
+                            <img src="img/bgs/5.webp">
+                            <h1 class="text-center sub-title-no-size text-dark my-3">블랙잭<br>(Blackjack)</h1>
+                            <p>21 숫자에 가까이 만들면 이기는 게임이다. 전 세계 어느 카지노를 가더라도 무조건 플레이 할 수있는 게임이다. 바카라보다는 룰이 복잡하지만 ​그래도 많은 이들에게 인기 있는 게임이다.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-4 sm-col-1">
+                        <div class="col-4 home-card">
+                            <img src="img/bgs/6.webp">
+                            <h1 class="text-center sub-title-no-size text-dark my-3">룰렛<br>Roulette</h1>
+                            <p>룰렛 게임이란 스핀 휠에 공을 굴려서 당첨 번호를 맞춰는 게임입니다.​ ​테이블에 배팅 숫자는 0-36 또는 00이 추가되기도 합니다. 배팅 구역은 각각의 번호 외에 홀짝, 상/중/하/ 하이 로우 등 다양하며 크로스 배팅이 가능합니다.
+                            </p>
+                        </div>
+                        <div class="col-4 home-card">
+                            <img src="img/bgs/7.webp">
+                            <h1 class="text-center sub-title-no-size text-dark my-3">포커<br>(Poker)</h1>
+                            <p>플레이어들은 본인이 가진 카드 조합을 확인하고 금액을 베팅한 후, 서로의 카드를 모두 공개하여 그 결과 가장 높은 카드 조합을 가진 플레이어가 승자가 되어 베팅 된 판돈을 모두 차지하는 게임이다.</p>
                         </div>
                     </div>
                 </div>

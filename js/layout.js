@@ -51,7 +51,8 @@ $(document).ready(function(){
         if ($(window).scrollTop() >= headerHeight) {
           stickyElement.addClass('active');
         } else {
-          stickyElement.removeClass('active');
+            $('.sticky').css('left',`${stickyElement.offset().left}px`)
+            stickyElement.removeClass('active');
         }
     });
     $('.user-profile').click(function(e){
@@ -61,7 +62,18 @@ $(document).ready(function(){
     $(window).click(function(){
         $('.user-profile .profile-drop').hide()
     })
-    //init tooltip
+    $('.nav-item i').click(function(){
+        let el = $(this).parent().siblings('dropdown-menu')
+        $(this).attr('class','fa-solid fa-minus')
+        el.toggle()
+    })
+    $('.nav-item .close').click(function(){
+        $('.navbar-nav').removeClass('show')
+    })
+    $('.mobile-toggle .menu').click(function(){
+        console.log('test')
+        $('.navbar-nav').addClass('show')
+    })
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
