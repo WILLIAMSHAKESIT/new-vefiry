@@ -61,6 +61,7 @@ $(document).ready(function(){
     $(window).click(function(){
         $('.user-profile .profile-drop').hide()
     })
+    //init tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
