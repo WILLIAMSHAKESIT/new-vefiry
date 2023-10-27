@@ -62,18 +62,54 @@ $(document).ready(function(){
     $(window).click(function(){
         $('.user-profile .profile-drop').hide()
     })
-    $('.nav-item i').click(function(){
-        let el = $(this).parent().siblings('dropdown-menu')
-        $(this).attr('class','fa-solid fa-minus')
+    $('.nav-item .toggle-sub-btn').click(function(){
+        let _this = $(this)
+        let el = _this.parent().siblings()
+        let elI = '<i class="fa-solid fa-plus mr-1"></i>' 
+
+        _this.parent().parent().find('dropdown-menu').hide()
+        // $('.toggle-sub-btn').html(`${elI}`)
         el.toggle()
+
+        if(el.is(":visible")){
+            elI = '<i class="fa-solid fa-minus mr-1"></i>'
+        }else{
+            elI = '<i class="fa-solid fa-plus mr-1"></i>'
+        }
+
+        _this.html(`${elI}`)
     })
     $('.nav-item .close').click(function(){
         $('.navbar-nav').removeClass('show')
     })
     $('.mobile-toggle .menu').click(function(){
-        console.log('test')
         $('.navbar-nav').addClass('show')
     })
+    
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    
+    var showcase = $("#slider")
+    
+    showcase.Cloud9Carousel( {
+    yOrigin: 42,
+    yRadius: 20,
+    xRadius: 550,
+    itemClass: "card-2",
+    buttonLeft: $(".nav.left"),
+    buttonRight: $(".nav.right"),
+    bringToFront: true,
+    autoPlayDelay:3000,
+    autoPlay:1,
+    onLoaded: function() {
+        showcase.css( 'visibility', 'visible' )
+        showcase.css( 'display', 'none' )
+        showcase.fadeIn( 1500 )
+    }
+    } )
+
+    $('.nav').click( function( e ) {
+        var b = $(e.target).addClass( 'down' )
+        setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+    } )
 })

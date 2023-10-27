@@ -120,18 +120,19 @@ $viewer-distance: 1000px;
                 box-sizing: border-box;
                 padding: 0 $item-separation / 2;
                 transition: 0.5s ease-in-out;
-                filter: grayscale(0.7);
+                height: 300px;
+                // filter: grayscale(0.7);
                 &:not(:first-of-type) {
                     position: absolute;
                     left: 0;
                     top: 0;
                 }
             }
-            &:hover{
-                img{
-                    filter: grayscale(0);
-                }
-            }
+            // &:hover{
+            //     img{
+            //         filter: grayscale(0);
+            //     }
+            // }
         }
 	}
 	
@@ -541,6 +542,9 @@ textarea{
 .desktop-table{
     display: table;
 }
+.desktop-flex{
+    display: flex;
+}
 .no-radius{
     border-radius: 0;
 }
@@ -605,8 +609,76 @@ textarea{
     color: #7c7c7c;
 }
 
+.aspect-small{
+    min-width: 30px;
+    min-height: 30px;
+}
+
 .separator-mobile{
     height: 10px;
     width: 100%;
     background-color: #e4e4e4;
+}
+
+.to-private{
+    position: absolute;
+    right: 46px;
+    bottom: 19px;
+}
+
+.h-100{
+    height: 100%;
+    min-height: 100%;
+}
+
+.form-control{
+    &.dark{
+        border: 1px solid #000;
+        border-radius: 0;
+    }
+    &:hover{
+        border-width: 2px;
+    }
+    &:focus{
+        border-width: 2px;
+    }
+    &.validation{
+        border-color: red;
+    }
+    &.bottom-border{
+        border: unset;
+        border-bottom: 1px solid #000;
+        border-radius: unset;
+        &:hover{
+            border-width: 2px;
+        }
+        &:focus{
+            border-width: 2px;
+        }
+    }
+}
+.pointer{
+    cursor: pointer;
+}
+.w-20{
+    width: 20%;
+}
+.user-profile,.user,.first{
+    cursor: pointer !important;
+}
+
+
+#slider{
+height: 450px;
+width: calc(100% + 304px);
+left: 50%;
+transform: translateX(-50%) scale(1);
+overflow: visible !important;
+margin-top: 30px;
+ .card-2{
+    width: 487px;
+    img{
+        height: 300px;
+    }
+ }
 }
