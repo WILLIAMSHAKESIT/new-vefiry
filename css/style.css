@@ -329,12 +329,28 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   border: 4px solid rgba(229, 229, 229, 0.66);
   padding: 10px;
   height: 113px;
+  cursor: pointer;
+}
+.thumb-item:hover .left .title {
+  color: #9c8f64;
+  text-align: left;
+}
+.thumb-item p {
+  margin-bottom: 0 !important;
 }
 .thumb-item .left .title {
   font-weight: bolder;
+  margin-bottom: 13px !important;
+  text-align: left !important;
+}
+.thumb-item .left p {
+  text-align: left;
 }
 .thumb-item img {
   width: 90px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .my-card {
@@ -538,6 +554,9 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   padding: 15px;
   left: 0;
   display: none;
+}
+.user .user-info-card.t-0 {
+  top: 30px;
 }
 .user .user-info-card .user-top {
   display: flex;
@@ -996,6 +1015,138 @@ header nav .container-fluid .navbar-nav li:hover .dropdown-menu li a:hover {
   height: 54px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-sarch-suggestions {
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  top: 39px;
+  left: 0;
+  display: none;
+}
+.main-sarch-suggestions .category {
+  margin-bottom: 10px;
+}
+.main-sarch-suggestions a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.main-sarch-suggestions a:hover {
+  background: rgb(236, 236, 236);
+}
+.main-sarch-suggestions a .thum {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+}
+.main-sarch-suggestions a .thum img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-sarch-suggestions a .texts {
+  text-align: left;
+  font-size: 0.8em;
+  width: 100%;
+}
+.main-sarch-suggestions a .texts h6 {
+  font-size: 1em;
+}
+.main-sarch-suggestions a .texts h6:first-child {
+  margin-bottom: 10px;
+}
+.main-sarch-suggestions a .texts h6:last-child {
+  color: #838383;
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-group.icon-input {
+  border-radius: 0;
+  height: 50px;
+}
+.input-group.icon-input .input-group-text {
+  border-radius: 0;
+  height: 100%;
+  background-color: unset;
+}
+.input-group.icon-input input {
+  padding-left: 0;
+  border-radius: 0 !important;
+  height: 100%;
+}
+.input-group.icon-input-2 {
+  border-radius: 5px;
+  height: 40px;
+}
+
+.search-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3215686275);
+  display: flex;
+  margin-top: 20px;
+}
+.search-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+}
+.search-nav a.active {
+  border-bottom: 2px solid #a3996f;
+}
+
+.search-card .card-title {
+  font-size: 1em !important;
+  font-weight: 500;
+}
+.search-card img {
+  width: 162px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.search-card:hover .card-title {
+  color: unset;
+  text-decoration: underline;
+}
+.search-card:hover .card-text {
+  color: unset;
+}
+
+.share-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.share-icon.facebook {
+  background-color: #4464a3;
+}
+.share-icon.twitter {
+  background-color: #55acee;
+}
+.share-icon.linkedin {
+  background-color: #0077b5;
+}
+.share-icon.link {
+  background-color: #333;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -1358,7 +1509,7 @@ a.lined-hover:hover {
 }
 
 .bordered {
-  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid rgba(0, 0, 0, 0.1607843137) !important;
 }
 
 .bordered-bottom {
@@ -1374,6 +1525,14 @@ a.lined-hover:hover {
   top: unset;
   left: 10px !important;
   bottom: 10px !important;
+}
+
+.input-focus:focus {
+  border: 1px solid #000 !important;
+}
+
+textarea {
+  min-height: 200px !important;
 }
 
 .font-md {
@@ -1663,6 +1822,64 @@ textarea:focus-visible {
   height: 300px;
 }
 
+.w-85 {
+  width: 85%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../img/arrow-left.png) !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../img/arrow-right.png) !important;
+}
+
+.fit-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-min-h {
+  min-height: calc(100vh - 360px);
+}
+
+.card-with-img img {
+  height: 285px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-recent-card {
+  height: 427px;
+}
+
+.avatar {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.avatar.avatar-sm {
+  min-width: 30px;
+  min-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main {
   margin-top: 60px;
 }
@@ -1753,9 +1970,11 @@ main section.event-section .container > .bordered {
 main section.event-section .container > .bordered .event-hash {
   display: block;
   white-space: nowrap;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding: 5px;
 }
 main section.event-section .container .social-links {
   padding: 20px 0;
@@ -1829,6 +2048,8 @@ main section.account-section .profile-cover {
   background: #6d664a;
   height: 250px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 main section.account-section .profile-cover .cover-change {
   position: absolute;
@@ -2036,6 +2257,9 @@ footer .icons a img {
   }
   .carousel figure a img {
     height: 200px;
+  }
+  .carousel-item img {
+    width: 100%;
   }
   .sm-center {
     justify-content: center !important;
@@ -2352,6 +2576,9 @@ footer .icons a img {
   footer .links ul {
     margin-bottom: 20px;
   }
+  .sm-p-sm {
+    padding: 10px !important;
+  }
   .my-card img {
     height: 101px;
     -o-object-fit: cover;
@@ -2369,6 +2596,12 @@ footer .icons a img {
   .sm-100 {
     width: 100%;
     min-width: 100%;
+  }
+  .sm-items-start {
+    align-items: start !important;
+  }
+  .fsm-col {
+    flex-direction: column;
   }
   .sm-mb {
     margin-bottom: 10px;
@@ -2417,6 +2650,12 @@ footer .icons a img {
   }
   .post-bottom-content .like-btn {
     display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .search-card img {
+    width: 100%;
+    aspect-ratio: unset;
   }
 }
 @media (max-width: 717px) {

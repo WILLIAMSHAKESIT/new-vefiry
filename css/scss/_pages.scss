@@ -103,9 +103,10 @@ main{
                         .event-hash{
                             display: block;
                             white-space: nowrap;
-                            width: 100%;
+                            width: fit-content;
                             text-overflow: ellipsis;
                             overflow: hidden;
+                            padding: 5px;
                         }
                     }
                 }
@@ -199,6 +200,8 @@ main{
                 background: #6d664a;
                 height: 250px;
                 position: relative;
+                background-size: cover;
+                background-position: center;
                 .cover-change{
                     position: absolute;
                     top: 40px;

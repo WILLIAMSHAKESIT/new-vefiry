@@ -20,7 +20,6 @@
     <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="js/plusone.js" type="text/javascript"></script>
     <script src="js/cloud-carousel.js" type="text/javascript"></script>
-    <script src="js/popper.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/layout.js" type="text/javascript"></script>
@@ -222,167 +221,93 @@
         </nav>
     </header>
     <main>
-        <section class="account-section pt-0 font-sm">
+        <section class="page-min-h">
             <div class="container">
-                <div class="profile-cover">
-                    <div class="cover-change">
-                        <input type="file" name="cover" id="cover"/>
-                        <label for="cover"></label>
-                        <div class="visible-icon">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>프로필 사진 변경</span>
+                <div class="d-flex align-items-center justify-content-between bordered-bottom py-3 fsm-col gap-sm sm-items-start">
+                    <div class="d-flex align-items-center gap-lg">
+                        <a href="#" class="yellow-hover">전체 게시물</a>
+                        <a href="#" class="yellow-hover">내 게시물</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-lg sm-100">
+                        <div class="input-group icon-input-2" bis_skin_checked="1">
+                            <span class="input-group-text">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </span>
+                            <input type="text" class="form-control" placeholder="">
                         </div>
-                    </div>
-                    <div class="profile-details">
-                        <div class="file-input">
-                            <input type="file" name="file-input" id="file-input" class="file-input__input" />
-                            <label class="file-input__label" for="file-input"></label>
-                            <img src="img/user.png" class="avatar" alt="">
-                            <div class="hover-cam">
-                                <i class="fa-solid fa-camera"></i>
+                        <a href="#" class="yellow-hover">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                        <div class="more-vert">
+                            <div class="avatar trigger">
+                                <img src="img/casino-exp-img.webp">
                             </div>
-                          </div>
-                        <div class="details">
-                            <p>잭팟원해요</p>
-                            <div class="counts">
-                                <a href="#"><span class="count mr-4">0</span>팔로워</a>
-                                &#x2022;
-                                <a href="#"><span class="count mr-4">0</span>팔로워</a>
-                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#shareModal">내 프로필</a>
+                                </li>
+                                <li>
+                                    <a href="#">설정</a>
+                                </li>
+                                <li>
+                                    <a href="#">설정</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- <div class="more-vert">
+                            <span class="trigger material-symbols-outlined">more_vert</span>
+                            <ul>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#shareModal">프로필 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">프로필 편집</a>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
-                    <div class="more-vert">
-                        <span class="trigger material-symbols-outlined">more_vert</span>
-                        <ul>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#shareModal">프로필 공유</a>
-                            </li>
-                            <li>
-                                <a href="#">프로필 편집</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="account-myaccount.html" class="to-private mt-3 mobile btn btn-outline-light w-fit">
-                        <span>공개 프로필 보기</span>
-                    </a>
-                    <img src="" alt="" class="cover-bg">
                 </div>
-                <ul class="account-nav desktop-flex">
-                    <li class="active"><a href="account-profile.html">프로필</a></li>
-                    <li><a href="account-blog-comments.html">블로그 댓글</a></li>
-                    <li><a href="account-forum-comments.html">게시판 댓글</a></li>
-                    <li><a href="forum-posts.html">게시판 게시물</a></li>
-                    <li><a href="account-myaccount.html">내 계정</a></li>
-                    <li><a href="account-notifications.html">알림</a></li>
-                    <li><a href="account-settings.html">설정</a></li>
-                </ul>
-                <div class="profile-drop-mobile">
-                    <select class="form-select">
-                        <option selected>프로필</option>
-                        <option value="1">블로그 댓글</option>
-                        <option value="2">게시판 댓글</option>
-                        <option value="3">게시판 게시물</option>
-                        <option value="4">내 계정</option>
-                        <option value="5">알림</option>
-                        <option value="5">설정</option>
+                <div class="mt-4">
+                    <span>카테고리</span>
+                    <select class="form-select w-25 mt-3 sm-100">
+                        <option>후기게시판</option>
                     </select>
                 </div>
-                <div class="my-4 sm-100 mobile">
-                    <h1 class="mb-3">프로필</h1>
-                    <span class="">Join date: 2022년 12월 20일</span>
-                    <a href="account-myaccount.html" class="mt-3 btn btn-outline-dark-yellow sm-100">
-                        <i class="fa-solid fa-pen"></i>
-                        <span>프로필 편집</span>
-                    </a>
-                </div>
-                <div class="row sm-col-1">
-                    <div class="col-8">
-                        <h3>소개</h3>
-                        <div class="d-flex gap-md py-4 bordered-bottom">
-                            <span data-bs-toggle="tooltip" data-bs-title="해당 회원 게시물 및 댓글에 추가되어 있는 좋아요의 수를 의미합니다."><span>0</span> 좋아요</span>
-                            <span data-bs-toggle="tooltip" data-bs-title="해당 회원 게시판 게시물에 추가되어 있는 댓글의 수를 의미합니다."><span>0</span> 개 댓글</span>
-                            <span data-bs-toggle="tooltip" data-bs-title="해당 회원의 게시물이 베스트답변으로 선정된 횟수를 의미합니다."><span>0</span> 베스트 답변</span>
+                <div class="bordered p-5 mt-3 rounded-sm sm-p-sm">
+                    <div class="d-flex align-items-center gap-2 user mb-0">
+                        <div class="avatar avatar-sm trigger">
+                            <img src="img/casino-exp-img.webp">
                         </div>
-                        <div class="profile-bio" data-bs-toggle="modal" data-bs-target="#bioModal">
-                            <p>자기 자신에 대한 내용을 공유하세요.</p>
-                            <div>
-                                <span class="material-symbols-outlined">photo_camera</span>
-                                <span class="material-symbols-outlined">videocam</span>
-                                <span class="material-symbols-outlined">gif</span>
+                        <span>게시물 작성자: william elcano</span>
+                        <div class="user-info-card t-0">
+                            <div class="user-top">
+                                <img src="img/user.svg">
+                                <div class="user-info">
+                                    <span class="user-name">woojjea</span>
+                                    <span>가입일: 2023년 8월 22일</span>
+                                </div>
                             </div>
+                            <div class="user-bottom">
+                                <span>0 팔로잉</span>
+                                <span>&bull;</span>
+                                <span>0 팔로워</span>
+                                <span>&bull;</span>
+                            </div>
+                            <span>test 1000</span>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5>개요</h5>
-                            <span class="material-symbols-outlined desktop" data-bs-custom-class="tooltip-white"  data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="커뮤니티 회원과 공유하는 내용이 표시되는 섹션입니다.">info</span>
-                        </div>
-                        <div class="mt-5">
-                            <h6 class="light">닉네임</h6>
-                            <h6 class="lighter">미게시</h6>
-                        </div>
-                        <div class="mt-5">
-                            <h6 class="light">전화번호</h6>
-                            <h6 class="lighter">0101111111</h6>
-                        </div>
+                    <input class="form-control w-100 mt-4 bordered" placeholder="+ 제목">
+                    <textarea class="form-control w-100 mt-4 h-100 bordered input-focus" placeholder="게시물 내용을 입력하고  이미지, 동영상 등을 추가하여 더 많은 독자를 유도할 수 있습니다."></textarea>
+                    <div class="d-flex gap-2 justify-content-end mt-4">
+                        <button class="btn btn-outline-dark-yellow">취소</button>
+                        <button class="btn btn-dark-yellow">게시</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Modal -->
-    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-none">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="text-center">내 프로필 공유하기</h2>
-                    <div class="my-5 d-flex align-items-center m-auto justify-content-between w-75">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-none">
-                    <h4>소개</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <textarea class="border-none w-100" placeholder="자기 자신에 대한 내용을 공유하세요."></textarea>
-                    <div>
-                        <span class="material-symbols-outlined">photo_camera</span>
-                        <span class="material-symbols-outlined">videocam</span>
-                        <span class="material-symbols-outlined">gif</span>
-                        <span class="material-symbols-outlined">sentiment_satisfied</span>
-                    </div>
-                </div>
-                <div class="modal-footer border-none">
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn btn-outline-black nowrap" data-bs-dismiss="modal">나가기</button>
-                        <button type="button" class="btn btn-dark nowrap">게시</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal -->
     <footer>
         <div class="container">
             <div class="links">

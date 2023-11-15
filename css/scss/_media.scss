@@ -36,6 +36,11 @@
             }
         }
     }
+    .carousel-item{
+        img{
+            width: 100%;
+        }
+    }
     .sm-center{
         justify-content: center !important;
     }
@@ -413,6 +418,9 @@
             }
         }
     }
+    .sm-p-sm{
+        padding: 10px !important;
+    }
     .my-card{
         img{
             height: 101px;
@@ -433,6 +441,12 @@
     .sm-100{
         width: 100%;
         min-width: 100%;
+    }
+    .sm-items-start{
+        align-items: start !important;
+    }
+    .fsm-col{
+        flex-direction: column;
     }
     .sm-mb{
         margin-bottom: 10px;
@@ -483,6 +497,15 @@
         }
     }
 }
+@media(max-width:768px){
+    .search-card{
+        img{
+            width: 100%;
+            aspect-ratio: unset;
+        }
+    }
+}
+
 @media(max-width:717px){
     #slider{
         transform: translateX(-50%) scale(0.3) !important;

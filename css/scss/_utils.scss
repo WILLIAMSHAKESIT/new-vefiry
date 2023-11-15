@@ -381,7 +381,7 @@ a{
     }
 }
 .bordered{
-    border: 1px solid #00000029;
+    border: 1px solid #00000029 !important;
 }
 .bordered-bottom{
     border-bottom: 1px solid #00000029;
@@ -399,7 +399,14 @@ a{
         bottom: 10px !important;
     }
 }
-
+.input-focus{
+    &:focus{
+        border: 1px solid #000 !important;
+    }
+}
+textarea{
+    min-height: 200px !important;
+}
 .font-md{
     font-size: 1.5em;
 }
@@ -681,4 +688,60 @@ margin-top: 30px;
         height: 300px;
     }
  }
+}
+
+.w-85{
+    width: 85%;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.carousel-control-prev-icon{
+    background-image:url(../../img/arrow-left.png) !important;
+}
+.carousel-control-next-icon{
+    background-image:url(../../img/arrow-right.png) !important;
+} 
+
+
+.fit-img{
+    height: 100%;
+    object-fit: cover;
+}
+.page-min-h{
+    min-height: calc(100vh - 360px);
+}
+
+
+.card-with-img{
+    img{
+        height: 285px;
+        object-fit: cover;
+    }
+}
+
+.post-recent-card{
+    height: 427px;
+}  
+
+.avatar{
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    &.avatar-sm{
+        min-width: 30px;
+        min-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

@@ -195,8 +195,8 @@
             <div class="container">
                 <div class="d-flex gap-sm align-items-center justify-content-between">
                     <div class="d-flex gap-sm desktop">
-                        <a href="#" class="yellow">전체 게시물</a>
-                        <a href="#">내 게시물</a>
+                        <a href="#">전체 게시물</a>
+                        <a href="#" class="yellow">내 게시물</a>
                     </div>
                     <select class="form-select border-none mobile w-50" aria-label="Default select example">
                         <option selected>전체 게시물</option>
@@ -231,7 +231,11 @@
                 </div>
                 <div class="review-list mt-4">
                     <div class="header">
-                        <div>
+                        <div class="d-flex align-items-center gap-1">
+                            <select class="form-select no-border desktop">
+                                <option selected>전체 카테고리</option>
+                                <option value="1">후기게시판</option>
+                            </select>
                             <select class="form-select no-border desktop">
                                 <option selected>최근 활동</option>
                                 <option value="1">최신순</option>
@@ -240,12 +244,16 @@
                                 <option value="3">반응순</option>
                             </select>
                         </div>
-                        <div class="d-flex align-items-center gap-sm sm-100">
+                        <div class="d-flex align-items-center gap-sm sm-100  sm-">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-ellipsis-vertical mobile mr-5"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-yellow desktop d-flex align-items-center"><span class="material-symbols-outlined mr-2">notifications</span> 전체 카테고리 팔로우</a>
-                            <a href="#" class="btn btn-dark-yellow sm-100 ml-4">게시물 추가</a>
+                            <select class="form-select desktop">
+                                <option selected>추가 작업</option>
+                                <option value="1">전체 확인으로 표시</option>
+                                <option value="2">전체 카테고리 팔로우</option>
+                            </select>
+                            <a href="#" class="btn btn-dark-yellow sm-100 ml-4 nowrap">게시물 추가</a>
                         </div>
                     </div>
                     <table class="table desktop-table">
@@ -2229,7 +2237,7 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-bottom">
+        <div class="modal-dialog modal-bottom sm-100">
         <div class="modal-content">
             <div class="modal-body p-4">
                 <a href="#" class="d-flex gap-sm align-items-center">

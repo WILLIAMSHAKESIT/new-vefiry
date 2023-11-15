@@ -244,8 +244,12 @@
                             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-ellipsis-vertical mobile mr-5"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-yellow desktop d-flex align-items-center"><span class="material-symbols-outlined mr-2">notifications</span> 전체 카테고리 팔로우</a>
-                            <a href="#" class="btn btn-dark-yellow sm-100 ml-4">게시물 추가</a>
+                            <select class="form-select">
+                                <option selected>추가 작업</option>
+                                <option value="1">전체 확인으로 표시</option>
+                                <option value="2">전체 카테고리 팔로우</option>
+                            </select>
+                            <a href="#" class="btn btn-dark-yellow sm-100 ml-4 nowrap">게시물 추가</a>
                         </div>
                     </div>
                     <table class="table desktop-table">
